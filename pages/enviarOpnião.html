@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/opinião.css">
+    <title>Opnião</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light corPrimeiraNav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0 mx-auto"> 
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-dark my-2 my-sm-0 btn-search" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="corDoMeio"></div>
+
+        <nav class="navbar navbar-expand-lg navbar-light corNav">
+            <div class="container">
+              <a class="navbar-brand" href="/index.html"><img src="/assets/images/clima.jpg" alt="" style="width: 100px; height: 60px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Hoje</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-purple" href="/pages/topicos.html">Tópicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/pages/radar.html">Radar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/pages/enviarOpnião.html" tabindex="-1" aria-disabled="true">Enviar Opnião</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="corMain" style="height: 600px;">
+      <div class="container">
+        <h2 class="py-2">Envie sua Opinião</h2>
+        <form id="opinionForm" action="/submit_opinion" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="opiniao">Opinião:</label>
+                <textarea class="form-control" id="opiniao" name="opiniao" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn corBotao mb-2">Enviar Opinião</button>
+        </form>
+        <div id="obrigadoMsg" class="mt-4" style="display: none;">
+            <p>Obrigado pela sua opinião!</p>
+        </div>
+    </div>
+    
+    </main>
+    
+    
+    
+
+    <footer class="footer fundoFooter text-light text-center py-3">
+        <div class="container">
+          <p class="mt-2">&copy; 2024 Todos os direitos reservados.</p>
+        </div>
+      </footer>
+  
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+          $('#opinionForm').submit(function(e){
+              e.preventDefault(); // Impede o envio padrão do formulário
+              $('#opinionForm').hide(); // Esconde o formulário
+              $('#obrigadoMsg').show(); // Mostra a mensagem de obrigado
+          });
+      });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Clima</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light corPrimeiraNav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0 mx-auto"> 
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-dark my-2 my-sm-0 btn-search" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="corDoMeio"></div>
+
+        <nav class="navbar navbar-expand-lg navbar-light corNav">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html"><img src="/assets/images/clima.jpg" alt="" style="width: 100px; height: 60px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Hoje</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-purple" href="/pages/topicos.html">Tópicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/pages/radar.html">Radar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/pages/enviarOpnião.html" tabindex="-1" aria-disabled="true">Enviar Opnião</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    <main class="corMain">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12  divLinhas">
+                    <!-- Primeira linha com fundo azul -->
+                    <div class="divInicial">
+                        <p>Qualidade do ar hoje - Manaus, AM</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 border-right">
+                            <!-- Primeira div na segunda linha -->
+                            <p class="pInicial">Boa</p> 
+                                
+                             <p class="pMeio">   A qualidade do ar é considerada satisfatória, e a poluição do ar representa risco pequeno ou nulo.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Segunda div na segunda linha -->
+                            <p class="pMeioSo">Poluente principal:</p>
+                            <p class="pMeio">PM2.5 (Partículas inferiores a 2,5 microns)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 divLinhas">
+                    <div class="divInicial">
+                        <p>Todos os poluentes</p>
+                    </div>
+                    <!-- Divs do meio -->
+                    <div class="row">
+                        <div class="col-md-6 border-bottom">
+                            <p class="pMeio">PM2.5 (Partículas inferiores a 2,5 microns) Boa 5.93 µg/m3</p>
+                        </div>
+                        <div class="col-md-6 border-bottom">
+                            <p class="pMeio">CO (Monóxido de carbono) Boa 140 µg/m3</p>
+                        </div>
+                    </div>
+                    <!-- Divs abaixo -->
+                    <div class="row">
+                        <div class="col-md-6 border-bottom">
+                            <p class="pMeio">NO2 (Dióxido de nitrogênio) Boa 1.34 µg/m3</p>
+                        </div>
+                        <div class="col-md-6 border-bottom">
+                            <p class="pMeio">O3 (Ozônio) Boa 42.05 µg/m3</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer class="footer fundoFooter text-light text-center py-3">
+        <div class="container">
+          <p class="mt-2">&copy; 2024 Todos os direitos reservados.</p>
+        </div>
+      </footer>
+  
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

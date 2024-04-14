@@ -1,0 +1,52 @@
+.carousel-img {
+    height: 600px; /* Defina a altura desejada para as imagens */
+    object-fit: cover; /* Garante que a imagem mantenha suas proporções e preencha o espaço disponível */
+}
+
+.corDeCima{
+    background-color: #ad59d5;
+    height: 80px;
+}
+
+.corDoMeio{
+    background-color: #652783;
+    height: 40px;
+}
+
+.corPrimeiraNav{
+    background-color: #ad59d5;
+}
+
+.corNav{ 
+    background-color: #ad59d5;
+}
+
+.nav-item:hover .nav-link {
+    color: #fff !important;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.border-right{
+    border-right: 1px solid transparent;
+}
+
+.border-bottom {
+    border-bottom: 1px solid transparent;
+}
+
+.corMain{
+    background: linear-gradient(to bottom, #652783, #ffffff);
+}
+
+
+h5{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.fundoFooter{
+    background-color: #ad59d5;
+    
+    
+}
